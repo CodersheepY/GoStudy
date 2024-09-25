@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Go Web</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the home page</h1>
+    <p>get data from backend:{{.msg}}</p>
+    <script src="/static/js/common.js"></script>
+    <form action="/user/add" method="post">
+      <p>username:<input type="text" name="username" /></p>
+      <p>password:<input type="password" name="password" /></p>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
